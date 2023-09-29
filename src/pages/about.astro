@@ -1,6 +1,21 @@
 ---
+const pageTitle = "About Me";
 
+const identity = {
+	firstName: "Sarah",
+	country: "Canada",
+	occupation: "Technical Writer",
+	hobbies: ["photography", "birdwatching", "baseball"],
+};
+
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+
+const happy = true;
+const finished = false;
+const goal = 3;
 ---
+
+Add the following lines below your existing paragraphs
 
 <html lang="en">
 	<head>
@@ -8,43 +23,30 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>About Matt</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
 		<a href="/">Home</a>
 		<a href="/about/">About</a>
 		<a href="/blog/">Blog</a>
 
-		<h1>About Matt</h1>
+		<h1>{pageTitle}</h1>
 		<p>Maker of awesome websites!!!</p>
 		<p>
 			More cool stuff here. So much cool stuff - More cool stuff here. So
 			much cool stuff - More cool stuff here. So much cool stuff - More
-			cool stuff here. So much cool stuff - More cool stuff here. So much
-			cool stuff - More cool stuff here. So much cool stuff - More cool
-			stuff here. So much cool stuff - More cool stuff here. So much cool
-			stuff - More cool stuff here. So much cool stuff - More cool stuff
-			here. So much cool stuff - More cool stuff here. So much cool stuff
-			- More cool stuff here. So much cool stuff - More cool stuff here.
-			So much cool stuff - More cool stuff here. So much cool stuff - More
-			cool stuff here. So much cool stuff - More cool stuff here. So much
-			cool stuff - More cool stuff here. So much cool stuff - More cool
-			stuff here. So much cool stuff - More cool stuff here. So much cool
-			stuff - More cool stuff here. So much cool stuff - More cool stuff
-			here. So much cool stuff - More cool stuff here. So much cool stuff
-			- More cool stuff here. So much cool stuff - More cool stuff here.
-			So much cool stuff - More cool stuff here. So much cool stuff - More
-			cool stuff here. So much cool stuff - More cool stuff here. So much
-			cool stuff - More cool stuff here. So much cool stuff - More cool
-			stuff here. So much cool stuff - More cool stuff here. So much cool
-			stuff - More cool stuff here. So much cool stuff - More cool stuff
-			here. So much cool stuff - More cool stuff here. So much cool stuff
-			- More cool stuff here. So much cool stuff - More cool stuff here.
-			So much cool stuff - More cool stuff here. So much cool stuff - More
-			cool stuff here. So much cool stuff - More cool stuff here. So much
-			cool stuff - More cool stuff here. So much cool stuff - More cool
-			stuff here. So much cool stuff - More cool stuff here. So much cool
-			stuff -
 		</p>
+
+		{happy && <p>I am happy to be learning Astro!</p>}
+
+		{finished && <p>I finished this tutorial!</p>}
+
+		{
+			goal === 3 ? (
+				<p>My goal is to finish in 3 days.</p>
+			) : (
+				<p>My goal is not 3 days.</p>
+			)
+		}
 	</body>
 </html>
