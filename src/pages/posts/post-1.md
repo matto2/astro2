@@ -7,7 +7,7 @@ author: 'Astro Learner'
 image:
     url: 'https://media.istockphoto.com/id/186123880/photo/close-up-of-a-surfer-riding-a-large-blue-wave.jpg?s=612x612&w=0&k=20&c=n9EYTgDDeF_RO7TmHG9TlBGrnAXjEML5rB_ql5xFtp0='
     alt: 'The full Astro logo.'
-tags: ["astro", "blogging", "learning in public"]
+tags: ["astro", "matt", "i rock", "mama bear"]
 ---
 Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
 
